@@ -1,0 +1,74 @@
+<div class="login" [style.min-height.px]="bodyHeight">
+  <div class="login-table-container" [style.min-height.px]="bodyHeight">
+    <div class="table-row">
+      <div class="login-box">
+        <div class="msg-box">
+          <h1>Signup!</h1>
+        </div>
+        <form [formGroup]="signupForm" (ngSubmit)="signup(signupForm)" novalidate>
+          <div class="input-container">
+            <label>Email <span class="required-star">*</span></label>
+            <input 
+              type="text"
+              name="username"
+              formControlName="username"
+            >
+            <span class="error-text" *ngIf="signupForm.get('username').hasError('required') && signupForm.get('username').touched && signupForm.get('username').hasError('email')">email is required</span>
+            <span class="error-text" *ngIf="!signupForm.get('username').hasError('required') && signupForm.get('username').hasError('email') && signupForm.get('username').touched">Invalid Email</span>
+          </div>
+          <div class="input-container">
+            <label>Password <span class="required-star">*</span></label>
+            <input 
+              type="password"
+              name="password"
+              formControlName="password"
+            >
+            <span class="error-text" *ngIf="!signupForm.get('password').valid && signupForm.get('password').touched">Password is required</span>
+          </div>
+          <div class="input-container">
+            <label>Confirm Password <span class="required-star">*</span></label>
+            <input 
+              type="password"
+              name="confirmPassword"
+              formControlName="confirmPassword"
+            >
+            <span class="error-text" *ngIf="!signupForm.get('confirmPassword').valid && signupForm.get('confirmPassword').touched">Confirm Password is required</span>
+          </div>
+          <div class="input-container">
+            <label>Phone No. <span class="required-star">*</span></label>
+            <input 
+              type="phonenumber"
+              name="phonenumber"
+              formControlName="phonenumber"
+            >
+            <span class="error-text" *ngIf="!signupForm.get('phonenumber').valid && signupForm.get('phonenumber').touched">Phone Number is required</span>
+          </div>
+          <div class="input-container">
+            <label>First Name <span class="required-star">*</span></label>
+            <input 
+              type="firstname"
+              name="firstname"
+              formControlName="firstname"
+            >
+            <span class="error-text" *ngIf="!signupForm.get('firstname').valid && signupForm.get('firstname').touched">First Name is required</span>
+          </div>
+          <div class="input-container">
+            <label>Last Name <span class="required-star">*</span></label>
+            <input 
+              type="lastname"
+              name="lastname"
+              formControlName="lastname"
+            >
+            <span class="error-text" *ngIf="!signupForm.get('lastname').valid && signupForm.get('lastname').touched">Last Name is required</span>
+          </div>
+          <div class="input-container">
+            <input type="submit" value="Signup" class="login-btn">
+          </div>
+          <div class="forgot text-left">
+            <p>Already have an account? <a [routerLink]="['/login']">Login</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="hotel-list">
+  <section class="tab-menu">
+    <ul>
+      <li>
+        <a href="">Hot Deals</a>
+      </li>
+      <li>
+        <a href="">Late Night</a>
+      </li>
+      <li>
+        <a href="">Short Rest</a>
+      </li>
+    </ul>
+  </section>
+  <section class="hotel-list">
+    <div class="hotel" [ngStyle]="{ 'background-image': 'url(' + hotel.CoverPicture + ')'}" *ngFor="let hotel of hotelList; let i = index;">
+      <section (click)="getHotelDetails(hotel.Id, hotel.RoomId)">
+        <div class="avail">
+          <span [ngClass]="hotel.RoomStatus === '0' ? 'not-available' : 'available'">{{hotel.RoomStatus === "0" ? "Not Available" : "Available"}}</span>
+          <p>
+            <span>Stay Duration: {{hotel.RoomDuration}}</span>
+          </p>
+        </div>
+        <div class="name-price">
+          <div class="row">
+            <div class="col-xs-8">
+              <p class="hotel-name">{{hotel.Name}}</p>
+              <p class="category">
+                <span>{{hotel.Category}}</span>
+              </p>
+              <p class="address">
+                {{hotel.HotelAddress}}
+              </p>
+            </div>
+            <div class="col-xs-4">
+              <p class="old-price">was
+                <del>{{hotel.Price + hotel.Discount}}</del>
+              </p>
+              <p class="current-price">{{hotel.Price}}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+</div>

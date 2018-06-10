@@ -1,0 +1,64 @@
+<header class="main-header">
+  <div class="container">  
+    <div class="row">
+      <div class="col-md-12">
+        <a [routerLink]="['/home']" class="logo">HotelWeb.com</a>
+      </div>
+      <!-- <div class="col-md-8">
+        <div class="text-right">
+          <a [routerLink]="['/login']" class="btn-login">Login</a>
+          <a [routerLink]="['/signup']" class="btn-signup">Signup</a>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="search-filter">
+        <h1>Search for hot deals</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, excepturi!</p>
+        <form class="searchform" [formGroup]="searchform" (ngSubmit)="filterData(searchform)" novalidate>
+          <div class="input-container">
+            <label>Destination place</label>
+            <input 
+              type="text"
+              name="destination"
+              formControlName="destination"
+              placeholder="place where you want to go..."
+            >
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="input-container">
+                <label>Check-in</label>
+                <input 
+                  type="text"
+                  name="checkin"
+                  formControlName="checkin"
+                  placeholder="Checkin date"
+                >
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="input-container">
+                <label>Check-out</label>
+                <input 
+                  type="text"
+                  name="checkout"
+                  formControlName="checkout"
+                  placeholder="Checkout date"
+                >
+              </div>
+            </div>
+          </div>
+          <div class="input-container">
+            <input type="submit" value="Search" class="search-btn">
+          </div>
+        </form>
+      </div>
+      <app-hotellist></app-hotellist>
+    </div>
+  </div>
+</div>

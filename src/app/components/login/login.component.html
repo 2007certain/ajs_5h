@@ -1,0 +1,46 @@
+<div class="login" [style.min-height.px]="bodyHeight">
+  <div class="login-table-container" [style.min-height.px]="bodyHeight">
+    <div class="table-row">
+      <div class="guest-box" *ngIf="chooseGuestUser">
+        <p (click)="loginAsGuest()">
+          <img src="assets/user.svg" alt="UserIcon"> Browse as guest user?</p>
+        <div class="or">
+          <span>OR</span>
+        </div>
+        <div class="signup text-center">
+          <p (click)="loginSelected()" class="text-center">Login</p>
+        </div>
+      </div>
+      <div class="login-box" *ngIf="chooseLogin">
+        <div class="msg-box">
+          <h1>Welcome!</h1>
+          <p>Type your username and password to continue</p>
+        </div>
+        <form [formGroup]="loginForm" (ngSubmit)="login(loginForm)" novalidate>
+          <div class="input-container">
+            <label>Email</label>
+            <input type="text" name="username" formControlName="username">
+            <span class="error-text" *ngIf="loginForm.get('username').hasError('required') && loginForm.get('username').touched && loginForm.get('username').hasError('email')">Username is required</span>
+            <span class="error-text" *ngIf="!loginForm.get('username').hasError('required') && loginForm.get('username').hasError('email') && loginForm.get('username').touched">Invalid Email</span>
+          </div>
+          <div class="input-container">
+            <label>Password</label>
+            <input type="password" name="password" formControlName="password">
+            <span class="error-text" *ngIf="!loginForm.get('password').valid && loginForm.get('password').touched">Password is required</span>
+          </div>
+          <div class="forgot text-right">
+            <a [routerLink]="['/forgotpassword']">Forgot Password?</a>
+          </div>
+          <div class="input-container">
+            <input type="submit" value="Login" class="login-btn">
+          </div>
+          <div class="forgot text-left">
+            <p>Not registered yet?
+              <a [routerLink]="['/signup']"> Let's do it!</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

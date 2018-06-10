@@ -1,0 +1,1144 @@
+{
+	"variables": [],
+	"info": {
+		"name": "HotelAPIs",
+		"_postman_id": "9c910016-db3d-a55a-39a5-dfd411004080",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Amenities",
+			"description": "Amenities detail",
+			"item": [
+				{
+					"name": "InsertHotelDetailInfo",
+					"request": {
+						"url": "http://localhost:55968/api/HotelDetail/InsertHotelDetailInfo",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Rooms",
+									"value": "10 to 15 with AC",
+									"type": "text"
+								},
+								{
+									"key": "Parking",
+									"value": "Yes",
+									"type": "text"
+								},
+								{
+									"key": "Gym",
+									"value": "yes",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Insert HotelDetail Info"
+					},
+					"response": []
+				},
+				{
+					"name": "InsertRoomDetailInfo",
+					"request": {
+						"url": "http://localhost:55968/api/RoomDetail/InsertRoomDetailInfo",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Bar",
+									"value": "Not Available",
+									"type": "text"
+								},
+								{
+									"key": "Refrigerator",
+									"value": "Yes",
+									"type": "text"
+								},
+								{
+									"key": "RoomSize",
+									"value": "10x 15 x",
+									"type": "text"
+								},
+								{
+									"key": "TV",
+									"value": "Yes",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Insert RoomDetail Info"
+					},
+					"response": []
+				},
+				{
+					"name": "InsertAmenitiesInfo",
+					"request": {
+						"url": "http://localhost:55968/api/amenitiesDetail/InsertAmenitiesInfo",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "FoodDetail.Id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "HotelDetail.Id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "RoomDetail.Id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Insert Amenities Info"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"description": "",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"url": "hoteldealzapi.azurewebsites.net/api/account/register",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "srdeepakshukla12@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Abc@12345",
+									"type": "text"
+								},
+								{
+									"key": "confirmPassword",
+									"value": "Abc@12345",
+									"type": "text"
+								},
+								{
+									"key": "PhoneNumber",
+									"value": "8400823221",
+									"type": "text"
+								},
+								{
+									"key": "LastName",
+									"value": "Shukla",
+									"type": "text"
+								},
+								{
+									"key": "FirstName",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"url": "hoteldealzapi.azurewebsites.net/token",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "userName",
+									"value": "srdeepakshukla12@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Abc@12345",
+									"type": "text"
+								},
+								{
+									"key": "useRefreshTokens",
+									"value": "false",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotel Group",
+			"description": "",
+			"item": [
+				{
+					"name": "InsertHotelGroup",
+					"request": {
+						"url": "http://localhost:55968/api/HotelGroup/InsertHotelGroup",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "HotelName",
+									"value": "My Hotel",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HotelInfo",
+			"description": "",
+			"item": [
+				{
+					"name": "InsertLocation",
+					"request": {
+						"url": "http://localhost:55968/api/Location/InsertLocation",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Latitude",
+									"value": "80.525",
+									"type": "text"
+								},
+								{
+									"key": "Longitude",
+									"value": "58.558",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Add Location"
+					},
+					"response": []
+				},
+				{
+					"name": "InsertHotelInfo",
+					"request": {
+						"url": "http://localhost:55968/api/HotelInfo/InsertHotelInfo",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "HotelName",
+									"value": "My Hotel",
+									"type": "text"
+								},
+								{
+									"key": "Category",
+									"value": "Basic",
+									"type": "text"
+								},
+								{
+									"key": "HotelAddress",
+									"value": "2/789 Vishal Khand Gomti Nagar Lucknow",
+									"type": "text"
+								},
+								{
+									"key": "Price",
+									"value": "5200",
+									"type": "text"
+								},
+								{
+									"key": "Discount",
+									"value": "500",
+									"type": "text"
+								},
+								{
+									"key": "CoverPicture",
+									"value": "my.png",
+									"type": "text"
+								},
+								{
+									"key": "RegistraionDate",
+									"value": "2017-10-10",
+									"type": "text"
+								},
+								{
+									"key": "NeedToKnow",
+									"value": "VERY GOOD HOTEL",
+									"type": "text"
+								},
+								{
+									"key": "WhyThisHotel",
+									"value": "very good services",
+									"type": "text"
+								},
+								{
+									"key": "HotelGroup_Id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "Amenities_Id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "Location_Id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Add new HotelInfo"
+					},
+					"response": []
+				},
+				{
+					"name": "AddGalleryImages",
+					"request": {
+						"url": "http://localhost:55968/api/Hotel/AddGalleryImages",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file2",
+									"value": "",
+									"type": "file"
+								},
+								{
+									"key": "file1",
+									"value": "",
+									"type": "file"
+								},
+								{
+									"key": "Title",
+									"value": "Image Title",
+									"type": "text"
+								},
+								{
+									"key": "Description",
+									"value": "Description",
+									"type": "text"
+								},
+								{
+									"key": "HotelId",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Gallery"
+					},
+					"response": []
+				},
+				{
+					"name": "AddUserImages",
+					"request": {
+						"url": "http://localhost:55968/api/Hotel/AddUserImages",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer 2XeUx2ySR1tij-AVqp56yrrDFKk6Cv16fu1_uFXt9414MbUxQuRYKBNdPqtYtKCUZ-h7MKMzWJ5_rvU1E690l3B_V0HbCtNTi5Fi_PBXosIeWn4RAt2L8vZ4NBsN3bZk14ldBUDeHwWVSsrocXUwaWll5odUymwszCPApnUzrji7bXbPVq-rtJpHa27fiIB8KwCOFpX-Jf1Xblg3TdIGpcJl7cyaJpeG8wLvdij4w36feJpG8G_t75BHLaqX90mytk4Sy0N9QT694YHIA2tlaMDdrTjsDt-eyUxtiyvTuOBZG7jEQUpk5XZAw8YWF6Wku-cc1jS0kK50YOVfCkF97h4EmE0KYQK-QFUy-r9mFLZg0cbjOOPDEhVsdgsw1ygMDytek4lrVk2bPbaIHbRw68m5H7O2isg7jYmHeaxBrMzE_jqYA341VbiZqBPqCDFCrqbgWg7-uyx3VeF9UIPG_2E-D3QN_V1juw8AgFjTtp-8xYAXIECBQzxoOXjTerGj"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "Title",
+									"value": "Image Title",
+									"type": "text"
+								},
+								{
+									"key": "Description",
+									"value": "Description",
+									"type": "text"
+								},
+								{
+									"key": "HotelId",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "file",
+									"value": "",
+									"type": "file"
+								},
+								{
+									"key": "file1",
+									"value": "",
+									"type": "file"
+								}
+							]
+						},
+						"description": "Add images in hotel"
+					},
+					"response": []
+				},
+				{
+					"name": "InsertDealType",
+					"request": {
+						"url": "http://localhost:55968/api/DealType/InsertDealType",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Name",
+									"value": "Hot",
+									"type": "text"
+								},
+								{
+									"key": "HotelInformation.ID",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"description": "Add DealType"
+					},
+					"response": []
+				},
+				{
+					"name": "GetListView",
+					"request": {
+						"url": "hoteldealzapi.azurewebsites.net/api/HotelListView/GetListView\n",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer VtoYT7IgDG7uQlw0DbIaJdDulUXQ_164fC2ImdYjAr3-DTaEHOaBalaZaJeiz7yuXqaT6jk6VsD3o7HneHxEuw6iIXkODCnh9jxMI608k1blwjzeJlrwY7bBRXHlrOlivNtQh5NaWMkW2zUM9a7OdHR7ZjfdiFQikVP1xIUDNhid8vTjOKSqBTVLf-4-deSzx_EYcRbkBrn2IB9DZx8JlLOK7TrG84Q37XyMbvhkMsfBroUv0VIGcUDi_fMKAyTuIqhEswQfsa_z_5oipH_mEnxmf3-skdPvo0_GZ0XjSR3BuW0vJGOF8mJwlfv5YMOvSz0rtv9e8_Uil1_WIVvPYIyfYRKWJ2-yzkCdg0cb-eTHSRula19mEGaKD8exdY9BmRYTHZI-J6A_IGxvNo02Et0U39HbUrZIskdIGu_5bRIWY43HNFxOa0LvWWtvqgLaBMAuHp0byFzhxNcy2JjPEvZc9tegGiJL70xFivG_v2Bp08SEUcSJF89Yu3VFMfrk",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": "GetListView"
+					},
+					"response": []
+				},
+				{
+					"name": "InsertBookingDetail",
+					"request": {
+						"url": "hoteldealzapi.azurewebsites.net/api/Booking/InsertBookingDetail",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer tzi3CTOK4CNZwCspZwlTluBrSfMVkfaZcpOqy0wjMog_dJOLbXKQbpPmlInit3yiFM7m9jtRC7bvMVYMYTU0fmakScJwQxIU_rUskI913YR_MXwpoTQTmSYYSfwezxGwbPq8fmVNWBZ9BZDyRC2XjqCREp0Jz0tfvU81C2m9YwT35pfe9a2kf4v9_pB6758KgV7H3EIETd6kNi-U895DbmvKckptCOpmc3Xkig4SfvP35l9QPdsdFPjqcB3PmTafDcMJSXX2GQAdDVeVb3fjEl5xcmYetx51QbdX2m47KhfacU5jYb88KrUY7E8xKC2anCMMujkp1vXXrlPZijqxt9d0PaAyH6CojiqpZFqaF9soY99N6Q0SYsg_vq17efyAlABHn4lnZApE_OKaNS-55kbMnB7J0pl_uvbCB1vye2P_kY8rl7pckf6Jbf6lDshVKVbvJy-4iJk6bElzDx-ch6pnamX0s7gByW6zokK-hexawLav4jgUVvp3pBzPE3Eb",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "IsBooked",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "BookingDate",
+									"value": "2017-10-10",
+									"type": "text"
+								},
+								{
+									"key": "RoomNo",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "CheckinDate",
+									"value": "2017-10-10",
+									"type": "text"
+								},
+								{
+									"key": "CheckOutDate",
+									"value": "2017-10-12",
+									"type": "text"
+								},
+								{
+									"key": "NumberOfAdults",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "NumberOfChildren",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "HotelInformation_Id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "Location.Id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "Payment.Id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "ShortRest",
+									"value": "6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "InsertBookingDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateBookingDetail",
+					"request": {
+						"url": "http://localhost:55968/api/Boking/UpdateBookingDetail",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "IsBooked",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "BookingDate",
+									"value": "2017-10-10",
+									"type": "text"
+								},
+								{
+									"key": "RoomNo",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "CheckinDate",
+									"value": "2017-10-10",
+									"type": "text"
+								},
+								{
+									"key": "CheckOutDate",
+									"value": "2017-10-12",
+									"type": "text"
+								},
+								{
+									"key": "NumberOfAdults",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "NumberOfChildren",
+									"value": "7",
+									"type": "text"
+								},
+								{
+									"key": "HotelInformation_Id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "Location.Id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "Payment.Id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "UpdateBookingDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "ChangeBookingStatus",
+					"request": {
+						"url": "http://localhost:55968/api/Boking/ChangeBookingStatus",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "IsBooked",
+									"value": "false",
+									"type": "text"
+								}
+							]
+						},
+						"description": "ChangeBookingStatus"
+					},
+					"response": []
+				},
+				{
+					"name": "InsertGuestInfo",
+					"request": {
+						"url": "http://localhost:55968/api/Guest/InsertGuestInfo",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Name",
+									"value": "Deepak  Shukla",
+									"type": "text"
+								},
+								{
+									"key": "Age",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "BookingInformation.Id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"description": "InsertGuestInfo"
+					},
+					"response": []
+				},
+				{
+					"name": "InsertLikes",
+					"request": {
+						"url": "http://localhost:55968/api/Like/InsertLikes",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "HotelInformation_Id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "LikeDate",
+									"value": "2017-10-10",
+									"type": "text"
+								}
+							]
+						},
+						"description": "InsertLikes"
+					},
+					"response": []
+				},
+				{
+					"name": "InsertRating",
+					"request": {
+						"url": "http://localhost:55968/api/Rating/InsertRating",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "RatingNumber",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "Message",
+									"value": "Good",
+									"type": "text"
+								},
+								{
+									"key": "RatingDate",
+									"value": "2017-01-01",
+									"type": "text"
+								},
+								{
+									"key": "HotelInformation_Id",
+									"value": "3",
+									"type": "text"
+								}
+							]
+						},
+						"description": "InsertRating"
+					},
+					"response": []
+				},
+				{
+					"name": "InsertPaymentDetail",
+					"request": {
+						"url": "http://localhost:55968/api/Payment/InsertPaymentDetail",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "CardType",
+									"value": "Visa Credit",
+									"type": "text"
+								},
+								{
+									"key": "SecurityCode",
+									"value": "1258",
+									"type": "text"
+								},
+								{
+									"key": "LastFour",
+									"value": "2547",
+									"type": "text"
+								}
+							]
+						},
+						"description": "InsertPaymentDetail"
+					},
+					"response": []
+				},
+				{
+					"name": "SelectHotelInfoById",
+					"request": {
+						"url": "hoteldealzapi.azurewebsites.net/api/HotelInfo/SelectHotelInfoById",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Authorization",
+								"value": "bearer VtoYT7IgDG7uQlw0DbIaJdDulUXQ_164fC2ImdYjAr3-DTaEHOaBalaZaJeiz7yuXqaT6jk6VsD3o7HneHxEuw6iIXkODCnh9jxMI608k1blwjzeJlrwY7bBRXHlrOlivNtQh5NaWMkW2zUM9a7OdHR7ZjfdiFQikVP1xIUDNhid8vTjOKSqBTVLf-4-deSzx_EYcRbkBrn2IB9DZx8JlLOK7TrG84Q37XyMbvhkMsfBroUv0VIGcUDi_fMKAyTuIqhEswQfsa_z_5oipH_mEnxmf3-skdPvo0_GZ0XjSR3BuW0vJGOF8mJwlfv5YMOvSz0rtv9e8_Uil1_WIVvPYIyfYRKWJ2-yzkCdg0cb-eTHSRula19mEGaKD8exdY9BmRYTHZI-J6A_IGxvNo02Et0U39HbUrZIskdIGu_5bRIWY43HNFxOa0LvWWtvqgLaBMAuHp0byFzhxNcy2JjPEvZc9tegGiJL70xFivG_v2Bp08SEUcSJF89Yu3VFMfrk",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "HotelId",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "RoomId",
+									"value": "6",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": "SelectHotelInfoById"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pay",
+			"description": "",
+			"item": [
+				{
+					"name": "http://localhost:55968/api/Payment/PayToUs",
+					"request": {
+						"url": "hoteldealzapi.azurewebsites.net/api/Payment/PayToUs",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer pfRE068ag1KCBkydh-mPTcjLgPxlLJSa0xiHwCQ1bhn2-Dpj2QOMJikrwWpabwUfJqpw23I0yxQY-O2Ykr9xSGGMdQXlSXMYmuC9GZa5RAMUvbRZfHG2egoO76VjreZfSViocNPQ2eegq_GW9BlO_kRy-uPD15ciDZdAPRx0X1RrwaIVulz6LsncGQRoLEKSw3QTw0Kg__4Gmi1miaSiWAdXyz0hnksJkT4RQfwbJ6A2Cc7CafzkoDlgqMKCFUOV_dXLashAut6vvZpqxtTqNrBTGRSVzgsy41NoQybq7Vzml0UjA17iNuxi2G1go25M4D34Xuo6dplkMeui5xxmCMzvLEUyGQZ-vAGHmPULj_R4ZVXp1mA24L4AcXYlQpn2mz95NS_lp1wP3xS-13DVziezrKdo5Xay3hNHoxI9kLPHrXQrwDNB0CkM7qF-hujO7G8AJSsRqBfjNtosmv-1fLz8Mi088Nnpb8xr80hDP0VKzvH5AljxU6UzrdV_Z5Pw",
+								"description": ""
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "HotelInformation.Id",
+									"value": "4",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "HotelRoomDetail.Id",
+									"value": "6",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "BookedBy.Email",
+									"value": "srdeepakshukla11@gmail.com",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "NumberOfChildren",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "NumberOfAdults",
+									"value": "3",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "App",
+			"description": "",
+			"item": [
+				{
+					"name": "Appsetting",
+					"request": {
+						"url": "hoteldealzapi.azurewebsites.net/api/App/Appsetting",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "bearer pfRE068ag1KCBkydh-mPTcjLgPxlLJSa0xiHwCQ1bhn2-Dpj2QOMJikrwWpabwUfJqpw23I0yxQY-O2Ykr9xSGGMdQXlSXMYmuC9GZa5RAMUvbRZfHG2egoO76VjreZfSViocNPQ2eegq_GW9BlO_kRy-uPD15ciDZdAPRx0X1RrwaIVulz6LsncGQRoLEKSw3QTw0Kg__4Gmi1miaSiWAdXyz0hnksJkT4RQfwbJ6A2Cc7CafzkoDlgqMKCFUOV_dXLashAut6vvZpqxtTqNrBTGRSVzgsy41NoQybq7Vzml0UjA17iNuxi2G1go25M4D34Xuo6dplkMeui5xxmCMzvLEUyGQZ-vAGHmPULj_R4ZVXp1mA24L4AcXYlQpn2mz95NS_lp1wP3xS-13DVziezrKdo5Xay3hNHoxI9kLPHrXQrwDNB0CkM7qF-hujO7G8AJSsRqBfjNtosmv-1fLz8Mi088Nnpb8xr80hDP0VKzvH5AljxU6UzrdV_Z5Pw",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://localhost:55968/api/Hotel/AddGalleryImages",
+			"request": {
+				"url": "http://localhost:55968/api/Hotel/AddGalleryImages",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file2",
+							"value": "",
+							"type": "file"
+						},
+						{
+							"key": "ClientDocs",
+							"value": "ClientDocs",
+							"type": "text"
+						},
+						{
+							"key": "file1",
+							"value": "",
+							"type": "file"
+						},
+						{
+							"key": "Title",
+							"value": "Image Title",
+							"type": "text"
+						},
+						{
+							"key": "Description",
+							"value": "Description",
+							"type": "text"
+						},
+						{
+							"key": "HotelId",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"description": "Gallery"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:55968/api/Hotel/AddUserImages",
+			"request": {
+				"url": "http://localhost:55968/api/Hotel/AddUserImages",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer GTUIds4ENWnocK0Ilqy1DVu7729TVHUCVz_-HnJ1Ne7iPGy7k2uPxhIOEC7naWzlh8dYeQHnZXzPSevq3KO2TOmP0m5dS3oZm-BqxcDKGSK8gnkBPV0IfE9Y8Pp433TtUrE47o7dnaTPlB9oj1aQyEqQepRsnnMnZe1MLsHYaZXi5Cot61JV9bpC2JctqOExSAzvh57DSppn3v7RiXg6op9jeAB6YV6eFvwMLnB7NVFq5rQvJQO82O2i_Lw0tx1Mjw3rwiDytJZ92uTklXnKq0hnX1DFcQB0ePKdVLd88C6bZNVqyLwomSAXY3hOWi3jviyWFBHMYbqHA-YWmoiMe6Xzj00sQDt6T3OKHpLZHvAM5wNTxgEaqvvdlUAmFJ_Rguf5Y4T8hveuKi3m2R9Iqud7zEGtRUEpVQp3-C7JLpj00W521BFs6OQ6vHquDGRphVFhOiQf4_HBAAIfxJaJ12gBYKTBmgmA1-RT6JUNFvS-rkzoOQoEdNE1JYf99O9X"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Title",
+							"value": "Image Title",
+							"type": "text"
+						},
+						{
+							"key": "Description",
+							"value": "Description",
+							"type": "text"
+						},
+						{
+							"key": "HotelId",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "file",
+							"value": "",
+							"type": "file"
+						},
+						{
+							"key": "file1",
+							"value": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "InsertFoodInfo",
+			"request": {
+				"url": "http://localhost:55968/api/Food/InsertFoodInfo",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"value": "bearer lrYgRHM02adyndVxAvdOr6JVdyGuE98sc93Aq-KHUR80GOla19h3Zi91JQNL6GhjFT0w6WYYZcCZp8Zkh_ZC2CmmmzXkqjzIsJ_QCQgtPICJ2NInuoZcbkExew_Yh45QI-d4wVQh2tONX3OYOQd0W2yBC562lqyCIKRLjqtBoBNqsqNDUsX9GdnSO8kNUerPC3ObSgvHf0XvGGkOJfWryxxR7OP6z9ESJE4SRd11Jxl8yk3qWmtgWPQtstoE1NzjxO3UmGYc3nEKuUeIt9H6hyp6k6TKg5xl0qQp3lyT0WUoFJII3_lPn5Kh4HXn0lO7xg8hYj_VbtM0MVWbQvyD_8zK5mIFOCfW0pjLjqXw3KaUYcg_mgdj5XV_UJohKCpKykpD2O3U1l0ShoB5XraPNwtyiydzS9r2JiazBI_3YrqEki6ohS1mn_YnPLCvYIEA_5rljueUeCoKLyHsv7IDXFCXzTOeVSd6KH8EyD-fSFp2Yx3jg-tLCRlGRGHYroRg"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "Drink",
+							"value": "Yes",
+							"type": "text"
+						},
+						{
+							"key": "RoomService",
+							"value": "Not Available",
+							"type": "text"
+						},
+						{
+							"key": "Grillserves",
+							"value": "yes Available",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

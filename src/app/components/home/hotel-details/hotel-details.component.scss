@@ -1,0 +1,101 @@
+$color-blue: #003580;
+
+.main-header{
+    background: $color-blue;
+    padding:12px 0 150px 12px;
+    .logo{
+        font-size: 24px;
+        line-height: 35px;
+        color: #fff;
+        font-weight: 800;
+    }
+    .btn-login, .btn-signup{
+        padding: 6px 15px;
+        border-radius: 3px;
+        font-size: 12px;
+        line-height: 16px;
+        color: #fff;
+        background: #009688;
+        display: inline-block;
+        margin: 1px 0 0px 10px;
+    }
+    .btn-signup{
+        background: orchid;
+    }
+}
+.hote-detail-section{
+    margin-top: -50px;
+}
+section{
+    border-radius: 2px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    -ms-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    padding: 10px 16px;
+    margin-bottom: 12px;
+    h1{
+        font-size: 22px;
+        line-height: 1;
+        color: #3c3c3c;
+        letter-spacing: 0.2px;
+        margin-bottom: 6px;
+        font-weight: 600;
+    }
+    p.address{
+        font-size: 14px;
+        line-height: 21px;
+        color: rgba(60, 60, 60, 0.5);
+        letter-spacing: 0.2px;
+        margin-bottom: 6px;
+        font-weight: 400;
+    }
+    .book-now{
+        border-radius: 3px;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 1;
+        background: #003580;
+        color: #fddc2c;
+        text-align: center;
+        padding: 16px 22px;
+        display: inline-block;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+        -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+        -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+        -ms-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+        -o-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+        font-weight: 400;
+    }
+    h4{
+        font-size: 14px;
+        line-height: 26px;
+        color: #484848;
+        letter-spacing: 0.2px;
+        display: block;
+        margin-bottom: 8px;
+        font-weight: 800;
+    }
+    ul{
+        display:flex;
+        margin: 15px 0;
+        li{
+            padding: 5px 10px;
+            margin-right: 15px;
+        }
+    }
+    ul.checks{
+        span{
+            font-size: 14px;
+            line-height: 21px;
+            color: rgba(60, 60, 60, 0.8);
+            letter-spacing: 0.2px;
+            margin-bottom: 6px;
+            display: block;
+            font-weight: 400;
+        }
+    }
+}
