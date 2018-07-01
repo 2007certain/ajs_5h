@@ -59,7 +59,7 @@ export class LoginComponent implements OnInit {
         this.dataService.loading = false;
         localStorage.setItem('data', JSON.stringify(res));
         this.loginService.setUserLoggedIn();
-        this.router.navigate(['/home']);
+        this.router.navigate(['/hotels']);
       }, error => {
         this.dataService.loading = false;
         alert(error.error.error_description);

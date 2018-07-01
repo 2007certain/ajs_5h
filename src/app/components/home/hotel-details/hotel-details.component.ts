@@ -21,7 +21,7 @@ export class HotelDetailsComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.getHotelData(this.hotelId, this.roomId);
+    this.getHotelData(this.hotelId, this.roomId);
   }
 
   getHotelData(hotelId, roomId) {
